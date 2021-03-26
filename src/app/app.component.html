@@ -1,0 +1,9 @@
+CNPJ: <input type="text" placeholder="Ex.: 000000000000000" [(ngModel)]="cnpj">
+<button (click)="consultarCNPJ()">Confirmar</button>
+
+<ng-container *ngIf="pessoa">
+  <p>Nome: {{pessoa.nome}}</p>
+  <p>CNPJ:  {{pessoa.cnpj}}</p>
+  <p>Endereço: {{ pessoa.logradouro }} - {{ pessoa.numero }} - {{ pessoa.bairro }} - {{ pessoa.complemento }}</p>
+  <p>Cidade: {{ pessoa.municipio }} - {{ pessoa.uf }}</p>
+</ng-container>
